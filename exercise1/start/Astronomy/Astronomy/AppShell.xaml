@@ -5,7 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Astronomy.Pages">
 
-    <ShellContent
+    <FlyoutItem Title="About Me">
+        <ShellContent
+        ContentTemplate="{DataTemplate local:AboutPage}"/>
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Moon Phase">
+        <ShellContent
         ContentTemplate="{DataTemplate local:MoonPhasePage}"/>
+    </FlyoutItem>
 
 </Shell>
